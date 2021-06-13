@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock/css/clockstyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    
+    
+    <h1>Digital clock</h1>
+
+    <div class="show" >
+        <h2 >Time is : <p id="time"></p></h2>
+        
+        <h2 >Date is: </h2>
+        <h2 id="date"> </h2>
+
+
+    </div>
+    <script>
+        
+        
+      
+       setInterval( show, 100);
+       
+       function show()
+       {
+        
+        let mydate = new Date();
+        
+        
+       var t= mydate.getHours()+":"+mydate.getMinutes()+":"+mydate.getSeconds();
+       var d= mydate.getDate()+"/"+mydate.getMonth()+"/"+mydate.getFullYear();
+        document.getElementById("time").innerText= t;
+       document.getElementById("date").innerText= d;
+       }
+      
+
+       console.log(d);
+
+       console.log(t);
+    </script>
+    <section class="general">
+        <div class="foot projects"> 
+            <h2>You like to visit</h2>
+            <div>
+                <a href="indexcal.html"><img src="clock/clockimg/calculator.png" alt=""></a>
+                <a href="indexclock.html"><img src="clock/clockimg/alarm clock.jpg" alt=""> </a>
+               <a href="index1.php"> <img src="clock/clockimg/feedback.png" alt=""></a>
+                <!-- <a href=""><img src="clock/clockimg/calculator.png" alt=""></a> -->
+            </div>
+    
+        </div>
+        <div class=" foot feedback">
+            <h2>Give feedback</h2>
+            <a href="index1.php"><img src="clock/clockimg/feedback.png" alt=""></a> 
+            <a href="index1.php"><img src="clock/clockimg/feedback.png" alt=""></a> 
+            <a href="index1.php"><img src="clock/clockimg/feedback.png" alt=""></a> 
+            <a href="index1.php"><img src="clock/clockimg/feedback.png" alt=""></a> 
+        </div>
+    </section>
+    
+   
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+
+*{
+    background-color: wheat;
+}.show{
+    text-align: center;
+    
+
+}
+h1{
+    text-align: center;
+    
+}
+.general{
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.general img{
+    width: 40px;
+    height: 45px;
+}
+.general feedback{
+    float: right;
+    
+}
+.foot{
+    /* border: 5px solid red; */
+    
+    text-align: center;
+    width: 50%;
+    height: 20%;
+}
